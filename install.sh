@@ -23,19 +23,10 @@ then
 	cd $theme_path
 	echo "npm install magnific-popup --save"
 	npm install magnific-popup --save
-	echo
 	echo "import '../../../node_modules/magnific-popup/dist/jquery.magnific-popup.min';" >> $theme_path"/src/assets/js/app.js"
 	echo "import './lib/magnific-popup';" >> $theme_path"/src/assets/js/app.js"
-	# echo "Please add the following imports to src/assets/js/app.js"
-	# echo "import '../../../node_modules/magnific-popup/dist/jquery.magnific-popup.min';"
-	# echo "import './lib/magnific-popup';"
-	# echo
-	# echo "Please add the following import to src/assets/scss/app.scss"
-	# echo "@import '../../../node_modules/magnific-popup/dist/magnific-popup';"
+	subl $theme_path"/src/assets/js/app.js"
 	echo "@import '../../../node_modules/magnific-popup/dist/magnific-popup';" >> $theme_path"/src/assets/scss/app.scss"
-	echo
 fi
 echo "@import 'gallery';" >> $theme_path"/src/assets/scss/app.scss"
-# echo "Please add the following import to src/assets/scss/app.scss"
-# echo "@import 'gallery';"
-echo
+subl $theme_path"/src/assets/scss/app.scss"
