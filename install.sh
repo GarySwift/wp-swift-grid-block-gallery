@@ -11,11 +11,8 @@ then
 	echo "Aborted"
 	exit
 fi
-
-cp page-gallery.php $theme_path"/page-templates/page-gallery.php"
-cp magnific-popup.js $theme_path"/src/assets/js/lib/magnific-popup.js"
-
-
+mv page-gallery.php $theme_path"/page-templates/page-gallery.php"
+mv magnific-popup.js $theme_path"/src/assets/js/lib/magnific-popup.js"
 printf "Do wish to install magnific-popup using npm? [y/N] "
 read verfiy
 # Check result
@@ -33,4 +30,3 @@ then
 	echo "@import '../../../node_modules/magnific-popup/dist/magnific-popup';"
 	echo
 fi
-
