@@ -15,6 +15,26 @@ How to use with FoundationPress.
 1) Open plugin directory in terminal
 2) Run this command `sh install.sh`
 
+```
+mac@wp-swift-grid-block-gallery$ sh install.sh
+ls -1 ../../themes
+M50retailPress
+index.php
+Enter your WordPress theme name: M50retailPress
+Do wish to install magnific-popup using npm? [y/N] y
+npm install magnific-popup --save
+npm WARN ajv-keywords@3.1.0 requires a peer of ajv@^6.0.0 but none was installed.
+
+Please add the following imports to src/assets/js/app.js
+import '../../../node_modules/magnific-popup/dist/jquery.magnific-popup.min';
+import './lib/magnific-popup';
+
+Please add the following imports to src/assets/scss/app.scss
+@import '../../../node_modules/magnific-popup/dist/magnific-popup';
+
+mac@wp-swift-grid-block-gallery$
+```
+
 ## Examples
 ![Dlight](screencapture-dlight-ie-project-jll-2018-06-05-10_37_05.png)
 
