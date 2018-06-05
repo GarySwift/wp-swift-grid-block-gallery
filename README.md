@@ -10,54 +10,11 @@
 
 ## Usage
 How to use with FoundationPress.
+
 ## Auto Installation
 1) Open plugin directory in terminal
 2) Run this command `sh install.sh`
 
-##### Manual Installation
-```
-npm install magnific-popup --save
-touch src/assets/js/lib/magnific-popup.js
-mv page-gallery.php ../../themes/M50retailPress/page-templates/page-gallery.php
-```
-
-##### Add Files
-src/assets/js/app.js
-```
-import '../../../node_modules/magnific-popup/dist/jquery.magnific-popup.min';
-import './lib/magnific-popup';
-```
-
-src/assets/scss/app.scss
-```
-@import '../../../node_modules/magnific-popup/dist/magnific-popup';
-```
-
-##### Event Listenter
-src/assets/js/lib/magnific-popup.js
-```js
-/** ref: http://dimsemenov.com/plugins/magnific-popup/ */
-jQuery(document).ready(function ($) {
-    if (typeof site !== 'undefined') {
-        small = '<small>'+site.name+' - '+site.description+'</small>';
-    }
-    $('.lightbox-gallery').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: 'a.lightbox', // the selector for gallery item
-            type: 'image',
-            gallery: {
-              enabled:true
-            },
-            image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function(item) {
-                    return item.el.attr('title') + small;
-                }
-            }        
-        });
-    }); 
-});
-```
 ## Examples
 ![Dlight](screencapture-dlight-ie-project-jll-2018-06-05-10_37_05.png)
 
