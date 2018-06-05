@@ -1,0 +1,34 @@
+@mixin project-color-cell($color) {
+	background-color: $color;
+}
+#project-image-gallery {
+	background-color: $white;
+	.grid-container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+.project-cell.primary {
+	@include project-color-cell($primary-color);
+}
+.project-cell.secondary {
+	@include project-color-cell(orange);
+}
+.project-cell.gray {
+	@include project-color-cell(#4C4C4C);
+}
+.project-cell {
+	overflow: hidden;
+	border: 3px solid $white;
+	img {
+		width: 100%;
+		height: auto;
+	    -ms-transform: scale(1);
+	    transform: scale(1);
+	    transition: transform .5s ease;		
+	}
+	img:hover {
+	    -ms-transform: scale(1.05);
+	    transform: scale(1.05);
+	}	
+}
