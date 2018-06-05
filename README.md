@@ -10,11 +10,15 @@
 
 ## Usage
 How to use with FoundationPress.
+## Auto Installation
+1) Open plugin directory in terminal
+2) Run this command `sh install.sh`
 
-##### Installation
+##### Manual Installation
 ```
 npm install magnific-popup --save
 touch src/assets/js/lib/magnific-popup.js
+mv page-gallery.php ../../themes/M50retailPress/page-templates/page-gallery.php
 ```
 
 ##### Add Files
