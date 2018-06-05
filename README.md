@@ -14,6 +14,15 @@ How to use with FoundationPress.
 ## Auto Installation
 1) Open plugin directory in terminal
 2) Run this command `sh install.sh`
+3) Please add the following imports to src/assets/js/app.js
+
+`import '../../../node_modules/magnific-popup/dist/jquery.magnific-popup.min';`
+
+`import './lib/magnific-popup';`
+
+4) Please add the following imports to src/assets/scss/app.scss
+
+`@import '../../../node_modules/magnific-popup/dist/magnific-popup';`
 
 ```
 mac@wp-swift-grid-block-gallery$ sh install.sh
